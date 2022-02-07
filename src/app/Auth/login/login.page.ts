@@ -12,7 +12,7 @@ export class LoginPage implements OnInit {
   ionicForm:FormGroup;
   isSubmitted=false;
 
-  constructor(public formBuilder:FormBuilder) {  }
+  constructor(public formBuilder:FormBuilder, private router: Router) {  }
 
   ngOnInit() {
     this.ionicForm =this.formBuilder.group({
@@ -30,7 +30,8 @@ export class LoginPage implements OnInit {
     }else{
       alert("Login Successfull")
       console.log(this.ionicForm.value.email)
-     
+      this.router.navigate(['tabs/tab1'])
+
     }
   }
  
