@@ -1,9 +1,9 @@
 import { FormControl } from "@angular/forms";
-export class PasswordValidator{
+export class EmailValidator{
     static passwordValidators(control:FormControl):any{
       return new Promise((resolve)=>{
           setTimeout(()=>{
-              if(control.value.minLength()==5 && control.value.maxLength()==7){
+              if(control.value.toLowerCase()==='greg'){
                   resolve({
                       'username taken':true,
                   });
