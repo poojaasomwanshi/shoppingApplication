@@ -1,0 +1,72 @@
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid white;
+  }
+  ion-content{
+    --ion-background-color:#cffcf9;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px !important;
+    align-self: center;
+}
+.email{
+
+    width:80%;
+    border-radius: 5px;
+    border-width: 10px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.password{
+    width:80%;
+    border-radius: 5px;
+    border-width: 10px;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+ion-card{
+    height: 95%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.986);
+}
+.items{
+    border: yellow;
+    border-radius: 2px;
+    border-width: 5px;
+}
+p{
+    color: black;
+}
+.forgottext{
+    text-align: right;
+  color: blue;
+  
+}
+.loginButton{
+    width:80%;
+    border-radius: 5px;
+    border-width: 10px;
+margin-top: 5%;
+   margin-left: 10%;
+   margin-right: 5%;
+}
+div{
+align-items: center;text-align: center;}
+.logos{
+    color: blue;
+    height: 25px;
+    width: 50px;
+    justify-content: center;padding: 2%;
+}
+.loginOptions{
+    margin-top: 6%;
+}
+.loginWith{
+    margin-bottom: 2%;
+}
+a{
+    text-decoration: none;
+}

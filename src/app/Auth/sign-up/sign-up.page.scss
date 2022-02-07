@@ -1,0 +1,58 @@
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid white;
+  }
+  ion-content{
+    --ion-background-color:#cffcf9;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px !important;
+}
+
+
+ion-card{
+    height: 95%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.986);
+}
+.items{
+    border: yellow;
+    border-radius: 2px;
+    border-width: 5px;
+}
+p{
+    color: black;
+}
+
+.loginButton{
+    width:80%;
+    border-radius: 5px;
+    border-width: 10px;
+margin-top: 5%;
+   margin-left: 10%;
+   margin-right: 5%;
+}
+
+
+.address{
+    color: wheat;
+    --background-color: red;
+    border: none;
+}
+
+  ion-item{
+        --background: white;
+        --color: black;
+        border-color: pink;
+        font-size: 15px;
+    }
+    .cotentImage{
+        width: 150px;margin-left: 30%;
+ }
+ .cardHeading{
+     text-align: center;
+     font-size: 25px;
+ }

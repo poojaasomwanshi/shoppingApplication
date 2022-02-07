@@ -1,0 +1,51 @@
+<ion-header color="danger">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="form-content">
+<form [formGroup]="ionicForm" (ngSubmit)="submitForm() " novalidate>
+  <ion-item  class="email" color="secondary">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input  type="email"   formControlName="email" required  pattern=""></ion-input>
+  </ion-item>
+  <ion-item class="password"  color="secondary">
+    <ion-label position="floating">Password</ion-label>
+    <ion-input  type="password" formControlName="password" required></ion-input>
+
+  </ion-item>
+  <ion-button expand="block" color="danger" class="loginButton" type="submit" [disabled]="!ionicForm.valid">LogIn</ion-button>
+</form>
+</ion-content>
+
+<!--  <ion-card color="primary">
+    <img src="../../assets/cart4.png" alt="ion">
+    
+    <ion-card-content>
+      
+      <ion-item  class="email" color="secondary">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input  type="email"   formControlName="email" required  pattern=""></ion-input>
+    </ion-item>
+  <br>  
+    <ion-item class="password"  color="secondary">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input  type="password" formControlName="password" required></ion-input>
+  
+    </ion-item>
+    <p class="forgottext"> Forgot Password</p>
+    <ion-button expand="block" color="danger" class="loginButton" type="submit" (click)="onSubmit()">LogIn</ion-button>
+  <div>  <a href="/sign-up" class="anchorCreate"> Create Account</a>
+  </div> 
+  
+  <div class="loginOptions">
+    <p class="loginWith">Or LogIn With</p><div>
+      <ion-icon name="logo-facebook" class="logos"></ion-icon>
+    <ion-icon name="logo-instagram" class="logos"></ion-icon>
+    <ion-icon name="logo-twitter" class="logos"></ion-icon></div></div>
+  </ion-card-content>
+  
+  
+    
+  </ion-card> -->
