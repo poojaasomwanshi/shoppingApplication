@@ -5,8 +5,8 @@
 </ion-header>
 
 <ion-content class="form-content"> <ion-card color="primary">
-  <img src="../../assets/cart4.png" alt="ion">
-  
+<div text-center>  <img class="cardimage" src="../../assets/cart4.png" alt="ion">
+</div>  
   <ion-card-content>
     <form [formGroup]="ionicForm" (ngSubmit)="submitForm() " novalidate>
     <ion-item  class="email" color="secondary">
@@ -19,8 +19,8 @@
     <ion-input  type="password" formControlName="password" required></ion-input>
 
   </ion-item>
-  <p class="forgottext"> Forgot Password</p>
-  <ion-button expand="block" color="danger" class="loginButton" type="submit" [disabled]="!ionicForm.valid" >LogIn</ion-button>
+  <p class="forgottext" > <a href="/forgot-password">Forgot password ?</a></p>
+  <ion-button expand="block"  class="loginButton" type="submit" [disabled]="!ionicForm.valid" >LogIn</ion-button>
   <!-- [routerLink]="['/welcome'] -->
   <div>  <a href="/sign-up" class="anchorCreate"> Create Account</a>
 </div> 

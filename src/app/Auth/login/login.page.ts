@@ -30,6 +30,7 @@ export class LoginPage implements OnInit {
     }else{
       alert("Login Successfull")
       console.log(this.ionicForm.value.email)
+      //move to tabs after login
       this.router.navigate(['tabs/tab1'])
 
     }

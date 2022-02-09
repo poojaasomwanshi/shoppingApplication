@@ -1,52 +1,61 @@
-<ion-header color="danger">
+<ion-header>
   <ion-toolbar>
-    <ion-title>Sign Up</ion-title>
+    <ion-title>SignUp Page</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content text-center>
+<p align="center">  <img class="cardimage" src="../../assets/cart4.png" alt="ion">
+</p>  
+   <ion-card-content >  <div><p class="formheader">Create Account</p></div>
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate class="formcontent">
+  <!-- <div>  <ion-item  color="secondary">
+      <ion-label position="floating" >First Name</ion-label>
+      <ion-input formControlName="firstname" type="text"></ion-input>
+    </ion-item>
+    
+    <ion-item  color="secondary">
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input formControlName="lastname" type="text"></ion-input>
+    </ion-item></div> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col width-40>
+          <ion-item > <ion-icon name="person" slot="end"></ion-icon>
 
-<ion-content >
+            <ion-label position="stacked" >User Name</ion-label>
+            <ion-input type="text"  formControlName="username" placeholder="Will Smith"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col width-40>
+          <ion-item > <ion-icon name="call" slot="end"></ion-icon>
 
-<ion-card color="primary">
-  <p class="cardHeading">Create  Account</p>
-  <img src="../../assets/cart4.png" class="cotentImage" alt="ion">
-
-  <ion-card-content>
-    <ion-item  class="item-content">
-        <ion-label position="floating">First Name</ion-label>
-        <ion-input type="text" ></ion-input>
-     
+            <ion-label position="stacked">Mobile Number</ion-label>
+            <ion-input type="number" formControlName="mobile" placeholder="9136856547"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
    
+    <ion-item  ><ion-icon name="mail" slot="end"></ion-icon>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="abc@gmail.com">      
+      </ion-input>
     </ion-item>
-    <br>  
-  <ion-item class="UserLastname" >
-    <ion-label position="floating">Last Name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-    <br>  
-    <ion-item class="Address" >
-      <ion-label position="floating">Address</ion-label>
-      <ion-textarea rows={6} cols={20}  position="floating"></ion-textarea>
+   
+   
+    <ion-item  >     <ion-icon name="eye-off" slot="end"></ion-icon>
+
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input maxlength="10" formControlName="password" type="text" required placeholder="enter your password"></ion-input>
+      
     </ion-item>
-<br>
-    <ion-item  class="email" >
-    <ion-label position="floating">Email</ion-label>
-    <ion-input type="email" ></ion-input>
-  </ion-item>
-<br>  
-  <ion-item class="password" >
-    <ion-label position="floating">Password</ion-label>
-    <ion-input type="text"></ion-input>
-
-  </ion-item>
-  
-  <ion-button expand="block" color="danger" class="loginButton">SignUp</ion-button>
- 
-
-</ion-card-content>
-
-
-  
-</ion-card>
+  </ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit"  expand="block">Register Now</ion-button>
+      </ion-col>
+    </ion-row>
+  </form></ion-card-content>
+  <p class="bottomtext">Already Have an account? <a href="/login">Login</a> </p>
 </ion-content>
 
 

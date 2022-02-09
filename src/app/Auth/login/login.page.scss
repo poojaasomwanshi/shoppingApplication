@@ -5,7 +5,7 @@ hr {
     border-top: 1px solid white;
   }
   ion-content{
-    --ion-background-color:#cffcf9;
+    --ion-background-color:#ff8c00;
     justify-content: center;
     align-items: center;
     margin-top: 50px !important;
@@ -27,9 +27,9 @@ hr {
     margin-right: 5%;
 }
 ion-card{
-    height: 95%;
-    margin-top: 5%;
-    margin-bottom: 1%;
+    height: 65%;
+    margin-top: 35%;
+    margin-bottom: -1%;
     background-color: rgba(255, 255, 255, 0.986);
 }
 .items{
@@ -41,8 +41,9 @@ p{
     color: black;
 }
 .forgottext{
-    text-align: right;
+    text-align: center;
   color: blue;
+  margin-left: 25px;
   
 }
 .loginButton{
@@ -52,6 +53,7 @@ p{
 margin-top: 5%;
    margin-left: 10%;
    margin-right: 5%;
+   --background:#ff8c00;
 }
 div{
 align-items: center;text-align: center;}
@@ -69,4 +71,9 @@ align-items: center;text-align: center;}
 }
 a{
     text-decoration: none;
+}
+.cardimage{
+    width: 150px;
+    margin-top: -10px;
+ 
 }
